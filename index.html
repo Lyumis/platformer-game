@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Совокот бегает по платформам</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-title">
+        <h1>Совокот бегает по платформам, и иногда избегает преграды</h1>
+    </div>
+    
+    <div id="game-container">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        
+        <!-- Overlay для паузы с кнопками -->
+        <div id="pause-overlay">
+            <div id="pause-text">ПАУЗА</div>
+            <div id="pause-menu-buttons">
+                <button id="resume-button" class="pause-menu-btn">Продолжить игру</button>
+                <button id="restart-from-pause-button" class="pause-menu-btn">Начать заново</button>
+            </div>
+        </div>
+        
+        <div id="start-screen" class="screen">
+            <h1>Совокот бегает по платформам</h1>
+            <button id="start-button">Начать игру</button>
+        </div>
+        <div id="game-over-screen" class="screen hidden">
+            <h1>Игра окончена</h1>
+            <p>Ваш счет: <span id="final-score">0</span></p>
+            <button id="restart-button">Играть снова</button>
+        </div>
+        
+        <!-- Кнопки управления игрой -->
+        <div id="game-controls">
+            <button id="pause-button" class="control-btn">⏸ Пауза</button>
+            <button id="restart-game-button" class="control-btn">🔄 Рестарт</button>
+        </div>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
